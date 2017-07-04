@@ -39,3 +39,20 @@ Now guess what will be the output?
 >If you say 'undefined' no you are wrong. The output is 10. But why ????
 
 As i mentioned earlier it is used the delete the object property only. ```delete``` operators don’t affect local variables.
+
+Ok lets try the same delete with another example
+
+```javascript
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+```
+
+The output would be ```xyz```. Here, ```emp1``` object has ```company``` as it is prototype property. The ```delete``` operator doesn’t delete prototype property.
+
+```emp1``` object doesn’t have company as its own property.
+
+ However, we can delete the ```company``` property directly from the ```Employee``` object using ```delete Employee.company```.
