@@ -38,4 +38,4 @@ Now guess what will be the output?
 
 >If you say 'undefined' no you are wrong. The output is 10. But why ????
 
-As i mentioned earlier it is used the delete the object property only.
+As i mentioned earlier it is used the delete the object property only. ```delete``` operators don’t affect local variables.
