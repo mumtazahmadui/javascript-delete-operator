@@ -4,8 +4,6 @@
 The delete operator is used to delete the property of an object.
 ```
 
-> How to create function overloading in JavaScript?
-
 The example for delete operator is given below.
 
 ```javascript
